@@ -6,19 +6,19 @@
 		<meta name="description" content="momoshko" />
 		<title>momoshko</title>
 		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-		
-		<script type="text/javascript">
-			$(document).ready(function() {
-				set_chat_height();
-			});
-			$(window).resize(function() {
-				set_chat_height();
-			});
-			function set_chat_height() {
-				$('#chat').attr('src','http://chat.sc2tv.ru/index.htm?channelId=43415&stop=&width=230&height='+$('#chat').height());
-			}
-		</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">		
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+ set_chat_height();
+});
+$(window).resize(function() {
+ set_chat_height();
+});
+function set_chat_height() {
+ $('#chat').attr('src','http://chat.sc2tv.ru/index.htm?channelId=43415&stop=&width=300&height='+$('#chat').height());
+}
+</script>
 		
 		<style>
    h1 {
