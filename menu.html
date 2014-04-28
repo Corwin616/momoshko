@@ -40,6 +40,7 @@ function set_chat_height() {
 	margin: 0;
    }
   </style>
+  
   <style type="text/css">
 #btn1 {
 width: 100px;
@@ -129,12 +130,24 @@ outline: none; /* Убираем границу вокруг ссылок  */
         <tr>
 			<td width="300">
 				<center>				
-                 <div id="rainbow"><a href="http://sc2tv.ru/channel/momoshko" target="_blank"><img src="img/logo.png" alt="" height="80" width="300"></img></a></div><p><INPUT width="100px" id="btn1" TYPE="button" Value="CyberGame" onClick="parent.CONTENT.location='content.html';"><INPUT width="100px" id="btn2" TYPE="button" Value="TwitchTV" onClick="parent.CONTENT.location='content-second.html';"><INPUT width="100px" id="btn3" TYPE="button" Value="VideochatRU" onClick="parent.CONTENT.location='content-third.html';"></p>				 
+                 <div id="rainbow"><a href="http://sc2tv.ru/channel/momoshko" target="_blank"><script language="JavaScript">
+function random_imglink(){
+var myimages=new Array()
+myimages[1]="img/logo1.png"
+myimages[2]="img/logo2.png"
+
+var ry=Math.floor(Math.random()*myimages.length)
+if (ry==0)
+ry=1
+document.write('<img src="'+myimages[ry]+'" border=0>')
+}
+random_imglink()
+</script></a></div><p><INPUT width="100px" id="btn1" TYPE="button" Value="CyberGame" onClick="parent.CONTENT.location='content.html';"><INPUT width="100px" id="btn2" TYPE="button" Value="TwitchTV" onClick="parent.CONTENT.location='content-second.html';"><INPUT width="100px" id="btn3" TYPE="button" Value="VideochatRU" onClick="parent.CONTENT.location='content-third.html';"></p>				 
 				</center>
 			</td>
 		</tr>
 		<tr>
-            <td background="img/nochat-sc2tv.jpg" align="center" style="vertical-align:top;" height="100%" width="300">
+            <td background="img/nochat-sc2tv-2.jpg" align="center" style="vertical-align:top;" height="100%" width="300">
 				<iframe id="chat" style="overflow:hidden;height:100%;width:100%;margin:0px;padding:0px;" 
                         width="100%" height="100%" frameborder="0" scrolling="no" align="bottom"
                         src="http://chat.sc2tv.ru/index.htm?channelId=157352&stop=&height=500&width=300"></iframe>
