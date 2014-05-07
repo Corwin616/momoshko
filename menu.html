@@ -76,7 +76,7 @@
             font-size: 14;
             color: #ffffff;
             cursor: pointer;
-            background-color: #4470B1;
+            background-color: #798099;
             border: 1px solid #000000;
             outline: none;
         }
@@ -183,7 +183,7 @@
         $(document).ready(function () {
 		setTimeout(function() {
             set_chat_height();
-			}, 100);
+			}, 300);
         });
         $(window).resize(function () {
             set_chat_height();
@@ -196,10 +196,10 @@
 
 </head>
 
-<body text="#AE0000" style="margin: 0px; padding:0px; height: 100%; width: 100%; overflow:hidden;" bgcolor="#000000">
+<body text="#AE0000" style="margin: 0px; padding:0px; height: 100%; width: 300; overflow:hidden;" bgcolor="#000000">
     <div style=" height: 100%">
-        <table style="width: 100%; height: 100%" cellspacing="0" cellpadding="0">
-            <tr>
+        <table style="width: 300; height: 100%" cellspacing="0" cellpadding="0">
+            <tr height="80">
                     <center>
 						<td width="218">
 							<a href="http://sc2tv.ru/channel/momoshko" target="_blank">
@@ -224,16 +224,16 @@
 							</div>
 						</td>
 						</tr>
-						<tr>
+						<tr height="24">
 						<td colspan="2">
                         <p><INPUT id="btn1" TYPE="button" Value="CyberGame" onClick="parent.CONTENT.location='content.html';"><INPUT id="btn2" TYPE="button" Value="TwitchTV" onClick="parent.CONTENT.location='content-second.html';"><INPUT id="btn3" TYPE="button" Value="Chtrl#RU" onClick="parent.CONTENT.location='content-third.html';"><INPUT id="btn4" TYPE="button" Value="Chtrl#COM" onClick="parent.CONTENT.location='content-fourth.html';">
                         </p>
                     </center>
                 </td>
             </tr>
-            <tr>
+            <tr height="100%">
                 <td colspan="2" background="img/nochat-sc2tv-2.jpg" align="center" style="vertical-align:top;" height="100%" width="300">
-                    <iframe id="chat" style="overflow:hidden;height:100%;width:100%;margin:0px;padding:0px;" width="100%" height="100%" frameborder="0" scrolling="no" align="bottom" src="http://chat.sc2tv.ru/index.htm?channelId=157352&stop=&height=500&width=300"></iframe>
+                    <iframe id="chat" style="overflow:hidden;height:100%;width:300px;margin:0px;padding:0px;" width="300" height="100%" frameborder="0" scrolling="no" align="bottom" src="http://chat.sc2tv.ru/index.htm?channelId=157352&stop=&height=500&width=300"></iframe>
                 </td>
             </tr>
         </table>
